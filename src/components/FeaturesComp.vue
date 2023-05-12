@@ -8,18 +8,17 @@
                         everything you need to generate awareness, drive traffic, connect.</p>
                 </div>
                 <div class="container_cards">
-                    <div class="card_features">
+                    <div v-for="(element, index) in cardfeatures" :key="index" class="card_features">
                         <div class="background_hover_image">
-                            <i class="fa-regular fa-image"></i>
+                            <i :class="element.iconCard"></i>
                         </div>
                         <div class="info_card">
                             <div class="box_icon">
-                                <i class="fa-regular fa-image"></i>
+                                <i :class="element.iconCard"></i>
                             </div>
                             <div class="infoCard">
-                                <h3 class="headingCard">Modular</h3>
-                                <p class="subHeadingCard">Composed in a pseudo-Latin language which more or Less
-                                    corresponds.</p>
+                                <h3 class="headingCard">{{ element.titleCard }}</h3>
+                                <p class="subHeadingCard">{{ element.subHeading }}</p>
                             </div>
                             <a class="readmore_cta" href="/readmore">Read More
                                 <i class="fa-solid fa-angle-right"></i>
@@ -37,7 +36,29 @@ export default {
     name: "FeaturesComp",
     data() {
         return {
-
+            // Array di oggetti per card features
+            cardfeatures: [
+                {
+                    iconCard: "fa-regular fa-image",
+                    titleCard: "Modular",
+                    subHeading: "Composed in a pseudo-Latin language which more or Less corresponds.",
+                },
+                {
+                    iconCard: "fa-regular fa-image",
+                    titleCard: "Responsive",
+                    subHeading: "Composed in a pseudo-Latin language which more or Less corresponds.",
+                },
+                {
+                    iconCard: "fa-solid fa-qrcode",
+                    titleCard: "Customizable",
+                    subHeading: "Composed in a pseudo-Latin language which more or Less corresponds.",
+                },
+                {
+                    iconCard: "fa-solid fa-maximize",
+                    titleCard: "Scalable",
+                    subHeading: "Composed in a pseudo-Latin language which more or Less corresponds.",
+                },
+            ],
         }
     }
 }
@@ -102,7 +123,7 @@ export default {
     transition: opacity 300ms ease;
 }
 
-.card_features:hover .background_hover_image{
+.card_features:hover .background_hover_image {
     opacity: .1;
 }
 
@@ -116,7 +137,7 @@ export default {
     justify-content: flex-end;
 }
 
-.info_card{
+.info_card {
     position: relative;
     z-index: 5;
 }
