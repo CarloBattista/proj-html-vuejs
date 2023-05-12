@@ -41,4 +41,19 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.pins_tag_container{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.pin{
+    color: #2F55D4;
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 4px 15px;
+    border-radius: 30px;
+    background: #E4E9F8;
+}
 </style>
