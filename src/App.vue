@@ -41,6 +41,10 @@ export default {
   justify-content: space-between;
 }
 
+.height-100{
+  height: 100%;
+}
+
 .mainView{
   position: relative;
   z-index: 5;

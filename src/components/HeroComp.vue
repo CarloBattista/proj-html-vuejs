@@ -1,6 +1,6 @@
 <template>
     <div class="hero_section">
-        <div class="w-70">
+        <div class="w-70 d-flex align-items-center height-100">
             <div class="top_region">
                 <div class="region_left">
                     <div class="pins_tag_container">
@@ -20,7 +20,11 @@
                     </div>
                     <p class="version">Current Version: v2.6.0</p>
                 </div>
-                <div class="region_right"></div>
+                <div class="region_right">
+                    <div class="container_image">
+                        <div class="background_image"></div>
+                    </div>
+                </div>
             </div>
             <div class="botttom_region"></div>
         </div>
@@ -36,10 +40,12 @@
 <style scoped>
 .hero_section{
     background: #F8F9FC;
+    height: calc(100vh - 80px);
 }
 
 .top_region{
     display: flex;
+    gap: 1em;
     align-items: center;
     justify-content: space-between;
 }
@@ -72,7 +78,7 @@
 
 .description_container{
     width: 63%;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .description{
@@ -82,6 +88,7 @@
 }
 
 .cta_container{
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
 }
@@ -134,5 +141,25 @@
     color: #2F55D4;
     background: transparent;
     border: 1px solid #2F55D4;
+}
+
+.version{
+    color: #8492A6;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.container_image{
+    width: 450px;
+    aspect-ratio: 1;
+}
+
+.background_image{
+    background-image: url(/_resources/_imgs/about.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 </style>
