@@ -13,7 +13,9 @@
                         <p class="description">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
                     </div>
                     <div class="cta_container">
-                        <a class="btn btn_filled" href="/getstarted">Get Started</a>
+                        <a class="btn btn_filled" href="/getstarted">Get Started
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
                         <a class="btn btn_outline" href="/documentation">Documentation</a>
                     </div>
                     <p class="version">Current Version: v2.6.0</p>
@@ -55,5 +57,82 @@
     padding: 4px 15px;
     border-radius: 30px;
     background: #E4E9F8;
+}
+
+.heading_container{
+    width: 45%;
+    margin-bottom: 16px;
+}
+
+.heading{
+    color: #161C2D;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.description_container{
+    width: 63%;
+    margin-bottom: 16px;
+}
+
+.description{
+    color: #8492A6;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.cta_container{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    color: #fff;
+    background: grey;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-right: 13px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn:last-child{
+    margin-right: 0;
+}
+
+.btn.btn_filled{
+    position: relative;
+    width: 124px;
+    color: #fff;
+    background: #2F55D4;
+    box-shadow: 0 0 3px rgba(47, 86, 212, .5);
+    transition: all 100ms ease;
+}
+
+.fa-arrow-right{
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    margin-left: 10px;
+    transition: all 100ms ease;
+}
+
+.btn_filled:hover{
+    width: 140px;
+    background: #2443AC;
+}
+
+.btn_filled:hover .fa-arrow-right{
+    opacity: 1;
+    transform: translateX(-10px);
+}
+
+.btn.btn_outline{
+    color: #2F55D4;
+    background: transparent;
+    border: 1px solid #2F55D4;
 }
 </style>
