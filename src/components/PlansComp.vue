@@ -16,6 +16,7 @@
                         <div class="payment_cycle">
                             <p class="payCycle">Per month</p>
                         </div>
+                        <p class="info_plan">All the basics for businesses that are just getting started.</p>
                     </div>
                     <div class="container_check">
                         <div class="check_container">
@@ -92,5 +93,102 @@ export default {
     border-radius: 6px;
     text-align: left;
     cursor: pointer;
+}
+
+.container_type_plan{
+    margin-bottom: 16px;
+}
+
+.typePlan{
+    color: #2F55D4;
+    background: #EAEEFB;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 30px;
+}
+
+.price_plan{
+    color: #161C2D;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.payment_cycle{
+    margin-bottom: 16px;
+}
+
+.payCycle,
+.info_plan{
+    color: #8492A6;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.container_check{
+    width: 100%;
+    margin: 22px 0;
+}
+
+.check_container {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.check_container:last-child {
+    margin-bottom: 0;
+}
+
+.check_container .fa-circle-check {
+    color: #2F55D4;
+}
+
+.titleCheck {
+    color: #939FB1;
+    margin-left: 8px;
+}
+
+.cta_container{
+    width: 100%;
+}
+
+.btn{
+    color: #fff;
+    background: grey;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-right: 13px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:last-child{
+    margin-right: 0;
+}
+
+.btn.btn_filled{
+    position: relative;
+    color: #fff;
+    background: #2F55D4;
+    box-shadow: 0 0 3px rgba(47, 86, 212, .5);
+    transition: all 100ms ease;
+}
+
+.btn_filled:hover{
+    background: #2443AC;
+}
+
+.alert{
+    color: #8492A6;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-top: 16px;
 }
 </style>
