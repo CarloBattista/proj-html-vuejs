@@ -14,8 +14,8 @@ export default {
 </template>
 
 <style>
-.w-60{
-  width: 60%;
+.w-70{
+  width: 70%;
   margin: 0 auto;
 }
 
