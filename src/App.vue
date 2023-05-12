@@ -5,6 +5,7 @@ import FeaturesComp from './components/FeaturesComp.vue';
 import QuickstartComp from './components/QuickstartComp.vue';
 import BuildtoolsComp from './components/BuildtoolsComp.vue';
 import PlansComp from './components/PlansComp.vue';
+import FindoutComp from './components/FindoutComp.vue';
 
 export default {
   name: "App",
@@ -14,7 +15,8 @@ export default {
     FeaturesComp,
     QuickstartComp,
     BuildtoolsComp,
-    PlansComp
+    PlansComp,
+    FindoutComp
   }
 }
 </script>
@@ -28,6 +30,7 @@ export default {
     <QuickstartComp />
     <BuildtoolsComp />
     <PlansComp />
+    <FindoutComp />
   </div>
 </template>
 
