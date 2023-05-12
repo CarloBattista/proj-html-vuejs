@@ -6,6 +6,7 @@ import QuickstartComp from './components/QuickstartComp.vue';
 import BuildtoolsComp from './components/BuildtoolsComp.vue';
 import PlansComp from './components/PlansComp.vue';
 import FindoutComp from './components/FindoutComp.vue';
+import FooterComp from './components/FooterComp.vue';
 
 export default {
   name: "App",
@@ -16,12 +17,14 @@ export default {
     QuickstartComp,
     BuildtoolsComp,
     PlansComp,
-    FindoutComp
+    FindoutComp,
+    FooterComp
   }
 }
 </script>
 
 <template>
+  <!-- Header -->
   <HeaderComp />
   <!-- MainView -->
   <div class="mainView">
@@ -32,6 +35,8 @@ export default {
     <PlansComp />
     <FindoutComp />
   </div>
+  <!-- Footer -->
+  <FooterComp />
 </template>
 
 <style>
