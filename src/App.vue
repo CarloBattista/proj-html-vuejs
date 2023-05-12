@@ -29,6 +29,10 @@ export default {
   display: flex;
 }
 
+.flex-d-column{
+  flex-direction: column;
+}
+
 .align-items-center{
   align-items: center;
 }
@@ -39,6 +43,10 @@ export default {
 
 .justify-c-between{
   justify-content: space-between;
+}
+
+.justify-c-around{
+  justify-content: space-around;
 }
 
 .height-100{

@@ -1,6 +1,6 @@
 <template>
     <div class="hero_section">
-        <div class="w-70 d-flex align-items-center height-100">
+        <div class="w-70 d-flex flex-d-column justify-c-between align-items-center height-100">
             <div class="top_region">
                 <div class="region_left">
                     <div class="pins_tag_container">
@@ -26,7 +26,28 @@
                     </div>
                 </div>
             </div>
-            <div class="botttom_region"></div>
+            <div class="botttom_region">
+                <div class="container_brands">
+                    <div class="card_brand">
+                        <img src="/_resources/_imgs/amazon.svg" alt="brand image">
+                    </div>
+                    <div class="card_brand">
+                        <img src="/_resources/_imgs/google.svg" alt="brand image">
+                    </div>
+                    <div class="card_brand">
+                        <img src="/_resources/_imgs/lenovo.svg" alt="brand image">
+                    </div>
+                    <div class="card_brand">
+                        <img src="/_resources/_imgs/paypal.svg" alt="brand image">
+                    </div>
+                    <div class="card_brand">
+                        <img src="/_resources/_imgs/shopify.svg" alt="brand image">
+                    </div>
+                    <div class="card_brand">
+                        <img src="/_resources/_imgs/spotify.svg" alt="brand image">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -161,5 +182,23 @@
     background-size: cover;
     width: 100%;
     height: 100%;
+}
+
+.container_brands{
+    width: 100%;
+    border-top: 1px solid #E4E9F8;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.card_brand{
+    width: 100%;
+    height: 100px;
+}
+
+.card_brand img{
+    width: 100%;
+    height: 100%;
+    transform: scale(.5);
 }
 </style>
