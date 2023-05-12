@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+    <div class="features_container">
         <div class="w-70">
             <div class="container_section">
                 <div class="container_heading">
@@ -65,6 +65,9 @@ export default {
 </script>
 
 <style scoped>
+.features_container{
+    width: 100%;
+}
 .container_section {
     width: 100%;
     padding: 6vw 0;
