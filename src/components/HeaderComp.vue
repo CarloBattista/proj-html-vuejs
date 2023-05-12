@@ -9,12 +9,12 @@
             </div>
             <div class="region_center">
                 <ul class="nav_list">
-                    <li class="listItem">
-                        <a href="/" id="">Home
-                            <i class="fa-solid fa-angle-down"></i>
+                    <li v-for="(element, index) in navPages" :key="index" class="listItem">
+                        <a :class="{ 'currentActive': element.currentActive }" :href="element.linkPage">{{element.titlePage}}
+                            <i :class="{ 'fa-solid fa-angle-down': element.iconCaret }" class=""></i>
                         </a>
                     </li>
-                    <li class="listItem">
+                    <!-- <li class="listItem">
                         <a href="/" id="currentActive">Landing
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
@@ -28,7 +28,7 @@
                         <a href="/" id="">Docs
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="region_right">
@@ -51,7 +51,37 @@
 
 <script>
 export default {
-    name: "HeaderComp"
+    name: "HeaderComp",
+    data() {
+        return {
+            navPages: [
+                {
+                    titlePage: "Home",
+                    linkPage: "/",
+                    iconCaret: false,
+                    currentActive: false,
+                },
+                {
+                    titlePage: "Landing",
+                    linkPage: "/landing",
+                    iconCaret: true,
+                    currentActive: true,
+                },
+                {
+                    titlePage: "Pages",
+                    linkPage: "/pages",
+                    iconCaret: true,
+                    currentActive: false,
+                },
+                {
+                    titlePage: "Docs",
+                    linkPage: "/docs",
+                    iconCaret: true,
+                    currentActive: false,
+                },
+            ],
+        }
+    }
 }
 </script>
 
@@ -65,38 +95,38 @@ export default {
     align-items: center;
 }
 
-.logoSite{
+.logoSite {
     width: 130px;
 }
 
 .nav_list,
-.listItem{
+.listItem {
     display: flex;
     align-items: center;
 }
 
-.listItem{
+.listItem {
     margin: 0 20px;
 }
 
-.listItem a{
+.listItem a {
     color: #161C2D;
     font-size: .9rem;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-#currentActive{
-    color: #2F55D4;
+.currentActive {
+    color: #2F55D4 !important;
 }
 
-.region_right{
+.region_right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.box_btn{
+.box_btn {
     width: 34px;
     height: 34px;
     border-radius: 6px;
@@ -111,37 +141,37 @@ export default {
     transition: all 100ms ease;
 }
 
-.btn_transparent{
+.btn_transparent {
     background: transparent;
     box-shadow: none;
 }
 
-.btn_transparent:hover{
+.btn_transparent:hover {
     background: transparent !important;
 }
 
-.btn_transparent i{
+.btn_transparent i {
     color: #161C2D !important;
 }
 
-.btn_transparent:hover i{
+.btn_transparent:hover i {
     color: #161C2D !important;
 }
 
-.box_btn:last-child{
+.box_btn:last-child {
     margin-right: 0;
 }
 
-.box_btn i{
+.box_btn i {
     color: #2F55D4;
     transition: color 100ms ease;
 }
 
-.box_btn:hover{
+.box_btn:hover {
     background: #2F55D4;
 }
 
-.box_btn:hover i{
+.box_btn:hover i {
     color: #fff;
 }
 </style>
