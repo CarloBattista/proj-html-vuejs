@@ -4,6 +4,7 @@ import HeroComp from './components/HeroComp.vue';
 import FeaturesComp from './components/FeaturesComp.vue';
 import QuickstartComp from './components/QuickstartComp.vue';
 import BuildtoolsComp from './components/BuildtoolsComp.vue';
+import PlansComp from './components/PlansComp.vue';
 
 export default {
   name: "App",
@@ -12,7 +13,8 @@ export default {
     HeroComp,
     FeaturesComp,
     QuickstartComp,
-    BuildtoolsComp
+    BuildtoolsComp,
+    PlansComp
   }
 }
 </script>
@@ -25,6 +27,7 @@ export default {
     <FeaturesComp />
     <QuickstartComp />
     <BuildtoolsComp />
+    <PlansComp />
   </div>
 </template>
 
