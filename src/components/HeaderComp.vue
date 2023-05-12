@@ -32,6 +32,9 @@
                 </ul>
             </div>
             <div class="region_right">
+                <div class="box_btn btn_transparent">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
                 <div class="box_btn">
                     <i class="fa-brands fa-github"></i>
                 </div>
@@ -105,6 +108,24 @@ export default {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all 100ms ease;
+}
+
+.btn_transparent{
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn_transparent:hover{
+    background: transparent !important;
+}
+
+.btn_transparent i{
+    color: #161C2D !important;
+}
+
+.btn_transparent:hover i{
+    color: #161C2D !important;
 }
 
 .box_btn:last-child{
@@ -113,5 +134,14 @@ export default {
 
 .box_btn i{
     color: #2F55D4;
+    transition: color 100ms ease;
+}
+
+.box_btn:hover{
+    background: #2F55D4;
+}
+
+.box_btn:hover i{
+    color: #fff;
 }
 </style>
