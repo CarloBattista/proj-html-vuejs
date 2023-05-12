@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 76.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f17424;
+      }
+
+      .cls-2 {
+        fill: #d55b0f;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: Poppins-Medium, Poppins;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <polygon class="cls-2" points="9 6 0 6 0 4 4 0 7.67 0 9 6"/>
+      <polygon class="cls-2" points="75 70.77 73.39 72.39 68.89 76.89 68.89 64.33 75 70.77"/>
+      <polygon class="cls-1" points="75 44.24 75 70.77 73.39 72.39 69.27 68.27 68.89 67.89 2.5 1.5 4 0 30.76 0 75 44.24"/>
+      <text class="cls-3" transform="translate(29.48 21.38) rotate(45)"><tspan x="0" y="0">Best</tspan></text>
+    </g>
+  </g>
+</svg>
