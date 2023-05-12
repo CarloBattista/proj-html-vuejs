@@ -57,13 +57,43 @@ export default {
 }
 
 .container_image{
-    margin-top: 60px;
-    width: 100%;
+    width: 65%;
+    margin: 60px auto 0;
 }
 
 .image_quickstart{
+    width: 100%;
     margin: 0 auto;
     border-radius: 6px;
     box-shadow: 0 0 3px #000;
+}
+
+.container_check{
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.check_container{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.check_container:last-child{
+    margin-right: 0;
+}
+
+.check_container .fa-circle-check{
+    color: #2ECA8B;
+}
+
+.titleCheck{
+    color: #939FB1;
+    margin-left: 8px;
 }
 </style>
