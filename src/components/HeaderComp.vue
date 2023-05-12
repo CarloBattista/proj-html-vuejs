@@ -31,7 +31,17 @@
                     </li>
                 </ul>
             </div>
-            <div class="region_right"></div>
+            <div class="region_right">
+                <div class="box_btn">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="box_btn">
+                    <i class="fa-brands fa-stack-overflow"></i>
+                </div>
+                <div class="box_btn">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -74,6 +84,34 @@ export default {
 }
 
 #currentActive{
+    color: #2F55D4;
+}
+
+.region_right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.box_btn{
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    background: #E4E9F8;
+    box-shadow: 0 0 3px rgba(47, 86, 212, .5);
+    margin-right: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.box_btn:last-child{
+    margin-right: 0;
+}
+
+.box_btn i{
     color: #2F55D4;
 }
 </style>
