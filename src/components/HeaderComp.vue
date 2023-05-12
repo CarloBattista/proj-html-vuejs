@@ -14,21 +14,6 @@
                             <i :class="{ 'fa-solid fa-angle-down': element.iconCaret }" class=""></i>
                         </a>
                     </li>
-                    <!-- <li class="listItem">
-                        <a href="/" id="currentActive">Landing
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                    </li>
-                    <li class="listItem">
-                        <a href="/" id="">Pages
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                    </li>
-                    <li class="listItem">
-                        <a href="/" id="">Docs
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                    </li> -->
                 </ul>
             </div>
             <div class="region_right">
@@ -54,6 +39,7 @@ export default {
     name: "HeaderComp",
     data() {
         return {
+            // Array di oggetti nav
             navPages: [
                 {
                     titlePage: "Home",

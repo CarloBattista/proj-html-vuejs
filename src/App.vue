@@ -1,16 +1,22 @@
 <script>
 import HeaderComp from './components/HeaderComp.vue';
+import HeroComp from './components/HeroComp.vue';
 
 export default {
   name: "App",
   components: {
-    HeaderComp
+    HeaderComp,
+    HeroComp
   }
 }
 </script>
 
 <template>
   <HeaderComp />
+  <!-- MainView -->
+  <div class="mainView">
+    <HeroComp />
+  </div>
 </template>
 
 <style>
