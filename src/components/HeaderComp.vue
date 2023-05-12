@@ -79,6 +79,7 @@ export default {
     height: 80px;
     display: flex;
     align-items: center;
+    background: #F8F9FC;
 }
 
 .logoSite {

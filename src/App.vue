@@ -40,4 +40,10 @@ export default {
 .justify-c-between{
   justify-content: space-between;
 }
+
+.mainView{
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
 </style>
