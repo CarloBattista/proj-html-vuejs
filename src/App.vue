@@ -55,6 +55,10 @@ export default {
   justify-content: space-around;
 }
 
+.text-align-center{
+  text-align: center;
+}
+
 .height-100{
   height: 100%;
 }
@@ -63,5 +67,9 @@ export default {
   position: relative;
   z-index: 5;
   width: 100%;
+}
+
+.highlight {
+    color: #2F55D4;
 }
 </style>

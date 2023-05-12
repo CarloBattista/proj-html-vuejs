@@ -84,10 +84,6 @@ export default {
     width: 60%;
 }
 
-.highlight {
-    color: #2F55D4;
-}
-
 .container_cards {
     padding: 3vw 0;
     display: grid;
