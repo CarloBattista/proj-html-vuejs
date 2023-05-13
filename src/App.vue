@@ -40,50 +40,54 @@ export default {
 </template>
 
 <style>
-.w-70{
+.w-70 {
   width: 70%;
   margin: 0 auto;
 }
 
-.d-flex{
+.d-flex {
   display: flex;
 }
 
-.flex-d-column{
+.flex-d-column {
   flex-direction: column;
 }
 
-.align-items-center{
+.align-items-center {
   align-items: center;
 }
 
-.justify-c-center{
+.justify-c-center {
   justify-content: center;
 }
 
-.justify-c-between{
+.justify-c-between {
   justify-content: space-between;
 }
 
-.justify-c-around{
+.justify-c-around {
   justify-content: space-around;
 }
 
-.text-align-center{
+.text-align-center {
   text-align: center;
 }
 
-.height-100{
+.height-100 {
   height: 100%;
 }
 
-.mainView{
+.mainView {
   position: relative;
   z-index: 5;
   width: 100%;
 }
 
 .highlight {
-    color: #2F55D4;
+  color: #2F55D4;
+}
+
+.highlight_red {
+  color: #DB3E51;
 }
 </style>

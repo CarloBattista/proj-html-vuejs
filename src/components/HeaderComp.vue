@@ -1,5 +1,4 @@
 <template>
-    <!-- Header -->
     <div class="header">
         <div class="w-70 d-flex align-items-center justify-c-between">
             <div class="region_left">
