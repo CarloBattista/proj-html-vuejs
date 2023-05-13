@@ -7,6 +7,7 @@ import BuildtoolsComp from './components/BuildtoolsComp.vue';
 import PlansComp from './components/PlansComp.vue';
 import FindoutComp from './components/FindoutComp.vue';
 import FooterComp from './components/FooterComp.vue';
+import ReturOnTopComp from './components/_microComp/ReturOnTopComp.vue';
 
 export default {
   name: "App",
@@ -18,7 +19,8 @@ export default {
     BuildtoolsComp,
     PlansComp,
     FindoutComp,
-    FooterComp
+    FooterComp,
+    ReturOnTopComp
   }
 }
 </script>
@@ -37,6 +39,10 @@ export default {
   </div>
   <!-- Footer -->
   <FooterComp />
+
+  <div class="extraComp">
+    <ReturOnTopComp />
+  </div>
 </template>
 
 <style>

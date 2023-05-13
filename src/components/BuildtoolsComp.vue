@@ -115,7 +115,7 @@ export default {
     color: #fff;
     background: #2F55D4;
     box-shadow: 0 0 3px rgba(47, 86, 212, .5);
-    transition: all 100ms ease;
+    transition: all 200ms ease;
 }
 
 .fa-arrow-right{
@@ -123,7 +123,7 @@ export default {
     right: 0;
     opacity: 0;
     margin-left: 10px;
-    transition: all 100ms ease;
+    transition: all 200ms ease;
 }
 
 .btn_filled:hover{

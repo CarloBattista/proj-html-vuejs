@@ -90,7 +90,7 @@ export default {
     font-size: 1rem;
     font-weight: 400;
     cursor: pointer;
-    transition: all 100ms ease;
+    transition: all 200ms ease;
 }
 
 .container_field .btn:hover{

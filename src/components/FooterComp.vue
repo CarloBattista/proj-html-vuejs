@@ -119,12 +119,11 @@
                     <div class="container_field_email">
                         <p class="headingEmailSection">Write your email <span class="highlight_red">*</span></p>
                         <div class="container_input">
-                            <div class="field_input_hed">
-                                <i class="fa-regular fa-envelope"></i>
-                                <span class="text_content">Your email:</span>
-                            </div>
                             <div class="container_field_input">
-                                <input class="inputEmail" type="email">
+                                <div class="box_icon">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <input class="inputEmail" type="email" placeholder="Your email:">
                             </div>
                         </div>
                         <div class="container_submit">
@@ -240,6 +239,11 @@ export default {
     color: #979FAA;
     font-size: .8rem;
     font-weight: 500;
+    transition: color 200ms ease;
+}
+
+.link_footer a:hover {
+    color: #fff;
 }
 
 .link_footer .fa-angle-right {
@@ -303,8 +307,26 @@ export default {
 }
 
 .container_field_input{
+    position: relative;
     width: 100%;
     height: 40px;
+}
+
+.box_icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_icon i{
+    color: #979FAA;
+    font-size: .8rem;
+    font-weight: 600;
 }
 
 .inputEmail{
@@ -312,14 +334,21 @@ export default {
     height: 100%;
     border: none;
     outline: none;
+    padding-left: 40px;
     padding-right: 20px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     background: #27314F;
 }
 
-.inputEmail[type=email]{
+.inputEmail::placeholder{
     color: #979FAA;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.inputEmail[type=email]{
+    color: #fff;
     font-size: .8rem;
     font-weight: 600;
 }
@@ -342,6 +371,12 @@ export default {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.btn_submit:hover{
+    background: #2F54D2;
+    color: #fff;
 }
 
 .down_region__footer {

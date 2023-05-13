@@ -74,11 +74,14 @@ export default {
 .header {
     position: sticky;
     z-index: 999;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
     background: #F8F9FC;
+    box-shadow: 0 0 3px rgba(60,72,88,.15);
 }
 
 .logoSite {

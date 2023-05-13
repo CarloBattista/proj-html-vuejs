@@ -1,5 +1,5 @@
 <template>
-    <div class="hero_section">
+    <div class="hero_section" id="hero_return">
         <div class="w-70 d-flex flex-d-column justify-c-between align-items-center height-100">
             <div class="top_region">
                 <div class="region_left">
@@ -137,7 +137,7 @@
     color: #fff;
     background: #2F55D4;
     box-shadow: 0 0 3px rgba(47, 86, 212, .5);
-    transition: all 100ms ease;
+    transition: all 200ms ease;
 }
 
 .fa-arrow-right{
@@ -145,7 +145,7 @@
     right: 0;
     opacity: 0;
     margin-left: 10px;
-    transition: all 100ms ease;
+    transition: all 200ms ease;
 }
 
 .btn_filled:hover{
@@ -162,6 +162,13 @@
     color: #2F55D4;
     background: transparent;
     border: 1px solid #2F55D4;
+    transition: all 200ms ease;
+}
+
+.btn_outline:hover{
+    background: #2F55D4;
+    border: 1px solid #2F55D4;
+    color: #fff;
 }
 
 .version{
