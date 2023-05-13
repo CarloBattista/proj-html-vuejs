@@ -1,42 +1,38 @@
 <template>
     <!-- Footer -->
     <div class="footer">
-        <div class="w-70 d-flex align-items-center justify-c-between">
-            <div class="up_region__footer">
+        <div class="w-70">
+            <div class="up_region__footer d-flex justify-c-between">
                 <div class="region_left">
-                    <div class="container_logo">
-                        <a href="/">
-                            <img class="logoSite" src="/_resources/_imgs/logo-light.png" alt="logo site landrick light">
-                        </a>
-                        <p class="web_description">Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
-                        <div class="container_socials">
-                            <div class="box_social">
-                                <a href="/">
-                                   <img class="social_icon" src="/_resources/_imgs/facebook-f.svg" alt="social icon">
-                                </a>
-                            </div>
-                            <div class="box_social">
-                                <a href="/">
-                                   <img class="social_icon" src="/_resources/_imgs/instagram.svg" alt="social icon">
-                                </a>
-                            </div>
-                            <div class="box_social">
-                                <a href="/">
-                                   <img class="social_icon" src="/_resources/_imgs/twitter.svg" alt="social icon">
-                                </a>
-                            </div>
-                            <div class="box_social">
-                                <a href="/">
-                                   <img class="social_icon" src="/_resources/_imgs/linkedin-in.svg" alt="social icon">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <h2>left</h2>
                 </div>
-                <div class="region_center"></div>
-                <div class="region_right"></div>
+                <div class="region_center">
+                    <h2>center</h2>
+                </div>
+                <div class="region_right">
+                    <h2>right</h2>
+                </div>
             </div>
-            <div class="down_region__footer"></div>
+            <div class="down_region__footer">
+                <div class="copyright">© 2020 Landrick. Design with ❤️ by Shreethemes.</div>
+                <ul class="credit_card_grid">
+                    <li class="creditCard">
+                        <img src="/_resources/_imgs/american-ex.png" alt="credit card">
+                    </li>
+                    <li class="creditCard">
+                        <img src="/_resources/_imgs/discover.png" alt="credit card">
+                    </li>
+                    <li class="creditCard">
+                        <img src="/_resources/_imgs/master-card.png" alt="credit card">
+                    </li>
+                    <li class="creditCard">
+                        <img src="/_resources/_imgs/paypal.png" alt="credit card">
+                    </li>
+                    <li class="creditCard">
+                        <img src="/_resources/_imgs/visa.png" alt="credit card">
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -55,53 +51,43 @@ export default {
 <style scoped>
 .footer {
     width: 100%;
-    padding: 60px 0;
+    padding-top: 60px;
     background: #202942;
 }
 
-.logoSite {
-    width: 130px;
+.down_region__footer{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #26314F;
 }
 
-.web_description{
-    color: #9AA3AC;
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 22px 0;
-    width: 43%;
+.copyright{
+    color: #979FAA;
+    font-size: .8rem;
+    font-weight: 400;
 }
 
-.container_socials{
+.credit_card_grid{
     display: flex;
     align-items: center;
 }
 
-.box_social{
-    width: 32px;
-    height: 32px;
-    border-radius: 6px;
+.creditCard{
+    width: 36px;
+    height: 26px;
     margin-right: 6px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #A7B0B8;
-    background: transparent;
-    cursor: pointer;
 }
 
-.box_social:last-child{
+.creditCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.creditCard:last-child{
     margin-right: 0;
-}
-
-.box_social a{
-    width: 100%;
-    height: 100%;
-}
-
-.social_icon{
-    width: 100%;
-    height: 100%;
-    transform: scale(.6);
 }
 </style>
