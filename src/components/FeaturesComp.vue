@@ -183,4 +183,13 @@ export default {
 .readmore_cta .fa-angle-right {
     margin-left: 6px;
 }
+
+@media only screen and (max-width: 1020px) {
+    .subHeading {
+        width: 90%;
+    }
+    .container_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 </style>

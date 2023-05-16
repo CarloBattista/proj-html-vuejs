@@ -4,7 +4,8 @@
             <div class="container_heading">
                 <h4 class="titleSection">Quickstart</h4>
                 <h2 class="headingSection">Awesomeisn't it? Let's dive in!</h2>
-                <p class="descriptionSection">Start working with <span class="highlight">Landrick</span> that can provide you need to generate awareness, drive traffic, connect.</p>
+                <p class="descriptionSection">Start working with <span class="highlight">Landrick</span> that can provide
+                    you need to generate awareness, drive traffic, connect.</p>
             </div>
             <div class="container_image">
                 <img class="image_quickstart" src="/_resources/_imgs/quickstart-npm.jpg" alt="quickstart">
@@ -30,25 +31,25 @@ export default {
 </script>
 
 <style scoped>
-.quickstart_container{
+.quickstart_container {
     width: 100%;
 }
 
-.titleSection{
+.titleSection {
     color: #2F55D4;
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 22px;
 }
 
-.headingSection{
+.headingSection {
     color: #161C2D;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 22px;
 }
 
-.descriptionSection{
+.descriptionSection {
     color: #8492A6;
     font-size: 1rem;
     font-weight: 500;
@@ -56,19 +57,19 @@ export default {
     margin: 0 auto;
 }
 
-.container_image{
+.container_image {
     width: 65%;
     margin: 60px auto 0;
 }
 
-.image_quickstart{
+.image_quickstart {
     width: 100%;
     margin: 0 auto;
     border-radius: 6px;
     box-shadow: 0 0 3px #000;
 }
 
-.container_check{
+.container_check {
     width: 65%;
     margin: 0 auto;
     margin-top: 16px;
@@ -76,7 +77,7 @@ export default {
     align-items: center;
 }
 
-.check_container{
+.check_container {
     font-size: 1rem;
     font-weight: 400;
     margin-right: 32px;
@@ -84,16 +85,28 @@ export default {
     align-items: center;
 }
 
-.check_container:last-child{
+.check_container:last-child {
     margin-right: 0;
 }
 
-.check_container .fa-circle-check{
+.check_container .fa-circle-check {
     color: #2ECA8B;
 }
 
-.titleCheck{
+.titleCheck {
     color: #939FB1;
     margin-left: 8px;
+}
+
+@media only screen and (max-width: 1020px) {
+    .quickstart_container {
+        padding: 60px 0;
+    }
+
+    .descriptionSection,
+    .container_image,
+    .container_check {
+        width: 100%;
+    }
 }
 </style>

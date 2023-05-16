@@ -149,4 +149,16 @@ export default {
     width: 100%;
     height: 100%;
 }
+
+@media only screen and (max-width: 1020px) {
+    .buildtools_container{
+        padding: 0;
+    }
+    .headingSection{
+        width: 100%;
+    }
+    .region_right{
+        display: none;
+    }
+}
 </style>

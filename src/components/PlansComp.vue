@@ -94,7 +94,7 @@ export default {
 </script>
 
 <style scoped>
-.quickstart_container {
+.plans_container {
     width: 100%;
 }
 
@@ -258,5 +258,19 @@ export default {
     font-size: .8rem;
     font-weight: 500;
     margin-top: 16px;
+}
+
+@media only screen and (max-width: 1020px) {
+    .plans_container {
+        padding: 60px 0;
+    }
+
+    .descriptionSection {
+        width: 100%;
+    }
+
+    .container_cards_plan {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 </style>

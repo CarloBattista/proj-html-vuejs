@@ -1,6 +1,6 @@
 <template>
     <div class="hero_section" id="hero_return">
-        <div class="w-70 d-flex flex-d-column justify-c-between align-items-center height-100">
+        <div class="w-70 d-flex flex-d-column justify-c-evenly align-items-center height-100">
             <div class="top_region">
                 <div class="region_left">
                     <div class="pins_tag_container">
@@ -10,7 +10,8 @@
                         <h1 class="heading">A Complete Devloper Toolset</h1>
                     </div>
                     <div class="description_container">
-                        <p class="description">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
+                        <p class="description">Launch your campaign and benefit from our expertise on designing and managing
+                            conversion centered bootstrap4 html page.</p>
                     </div>
                     <div class="cta_container">
                         <a class="btn btn_filled" href="/getstarted">Get Started
@@ -53,31 +54,31 @@
 </template>
 
 <script>
-    export default {
-        name: "HeroComp",
-    }
+export default {
+    name: "HeroComp",
+}
 </script>
 
 <style scoped>
-.hero_section{
+.hero_section {
     background: #F8F9FC;
     height: calc(100vh - 80px);
 }
 
-.top_region{
+.top_region {
     display: flex;
     gap: 1em;
     align-items: center;
     justify-content: space-between;
 }
 
-.pins_tag_container{
+.pins_tag_container {
     margin-bottom: 16px;
     display: flex;
     align-items: center;
 }
 
-.pin{
+.pin {
     color: #2F55D4;
     font-size: .8rem;
     font-weight: 400;
@@ -86,35 +87,35 @@
     background: #E4E9F8;
 }
 
-.heading_container{
+.heading_container {
     width: 45%;
     margin-bottom: 16px;
 }
 
-.heading{
+.heading {
     color: #161C2D;
     font-size: 2rem;
     font-weight: 700;
 }
 
-.description_container{
+.description_container {
     width: 63%;
     margin-bottom: 32px;
 }
 
-.description{
+.description {
     color: #8492A6;
     font-size: .8rem;
     font-weight: 500;
 }
 
-.cta_container{
+.cta_container {
     margin-bottom: 12px;
     display: flex;
     align-items: center;
 }
 
-.btn{
+.btn {
     color: #fff;
     background: grey;
     font-size: 1rem;
@@ -127,11 +128,11 @@
     cursor: pointer;
 }
 
-.btn:last-child{
+.btn:last-child {
     margin-right: 0;
 }
 
-.btn.btn_filled{
+.btn.btn_filled {
     position: relative;
     width: 124px;
     color: #fff;
@@ -140,7 +141,7 @@
     transition: all 200ms ease;
 }
 
-.fa-arrow-right{
+.fa-arrow-right {
     position: absolute;
     right: 0;
     opacity: 0;
@@ -148,41 +149,41 @@
     transition: all 200ms ease;
 }
 
-.btn_filled:hover{
+.btn_filled:hover {
     width: 140px;
     background: #2443AC;
 }
 
-.btn_filled:hover .fa-arrow-right{
+.btn_filled:hover .fa-arrow-right {
     opacity: 1;
     transform: translateX(-10px);
 }
 
-.btn.btn_outline{
+.btn.btn_outline {
     color: #2F55D4;
     background: transparent;
     border: 1px solid #2F55D4;
     transition: all 200ms ease;
 }
 
-.btn_outline:hover{
+.btn_outline:hover {
     background: #2F55D4;
     border: 1px solid #2F55D4;
     color: #fff;
 }
 
-.version{
+.version {
     color: #8492A6;
     font-size: .8rem;
     font-weight: 400;
 }
 
-.container_image{
+.container_image {
     width: 450px;
     aspect-ratio: 1;
 }
 
-.background_image{
+.background_image {
     background-image: url(/_resources/_imgs/about.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -191,21 +192,35 @@
     height: 100%;
 }
 
-.container_brands{
+.container_brands {
     width: 100%;
     border-top: 1px solid #E4E9F8;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
 
-.card_brand{
+.card_brand {
     width: 100%;
     height: 100px;
 }
 
-.card_brand img{
+.card_brand img {
     width: 100%;
     height: 100%;
     transform: scale(.5);
+}
+
+@media only screen and (max-width: 1020px) {
+    .heading_container {
+        width: 70%;
+    }
+
+    .container_brands {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .region_right {
+        display: none;
+    }
 }
 </style>

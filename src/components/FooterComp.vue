@@ -165,11 +165,11 @@ export default {
 <style scoped>
 .footer {
     width: 100%;
-    padding-top: 60px;
+    padding: 60px 0;
     background: #202942;
 }
 
-.up_region__footer{
+.up_region__footer {
     gap: 3em;
 }
 
@@ -260,30 +260,31 @@ export default {
     font-weight: 600;
     margin-bottom: 22px;
 }
+
 .subHeadingSection {
     color: #979FAA;
     font-size: .8rem;
     font-weight: 500;
 }
 
-.container_input{
+.container_input {
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-.container_field_email{
+.container_field_email {
     margin-top: 22px;
     margin-bottom: 12px;
 }
 
-.headingEmailSection{
+.headingEmailSection {
     color: #979FAA;
     font-size: .8rem;
     font-weight: 400;
 }
 
-.field_input_hed{
+.field_input_hed {
     width: 65%;
     height: 40px;
     border-top-left-radius: 6px;
@@ -295,24 +296,25 @@ export default {
     background: #27314F;
 }
 
-.field_input_hed .fa-envelope{
-    font-size: .8rem;
-}
-.field_input_hed .text_content{
+.field_input_hed .fa-envelope {
     font-size: .8rem;
 }
 
-.field_input_hed .fa-envelope{
+.field_input_hed .text_content {
+    font-size: .8rem;
+}
+
+.field_input_hed .fa-envelope {
     margin-right: 8px;
 }
 
-.container_field_input{
+.container_field_input {
     position: relative;
     width: 100%;
     height: 40px;
 }
 
-.box_icon{
+.box_icon {
     position: absolute;
     top: 0;
     left: 0;
@@ -323,13 +325,13 @@ export default {
     justify-content: center;
 }
 
-.box_icon i{
+.box_icon i {
     color: #979FAA;
     font-size: .8rem;
     font-weight: 600;
 }
 
-.inputEmail{
+.inputEmail {
     width: 100%;
     height: 100%;
     border: none;
@@ -341,25 +343,25 @@ export default {
     background: #27314F;
 }
 
-.inputEmail::placeholder{
+.inputEmail::placeholder {
     color: #979FAA;
     font-size: .8rem;
     font-weight: 600;
 }
 
-.inputEmail[type=email]{
+.inputEmail[type=email] {
     color: #fff;
     font-size: .8rem;
     font-weight: 600;
 }
 
-.container_submit{
+.container_submit {
     margin-top: 22px;
     width: 100%;
     height: 40px;
 }
 
-.btn_submit{
+.btn_submit {
     width: 100%;
     height: 100%;
     border-radius: 6px;
@@ -374,7 +376,7 @@ export default {
     transition: all 200ms ease;
 }
 
-.btn_submit:hover{
+.btn_submit:hover {
     background: #2F54D2;
     color: #fff;
 }
@@ -414,5 +416,25 @@ export default {
 
 .creditCard:last-child {
     margin-right: 0;
+}
+
+@media only screen and (max-width: 1020px) {
+    .up_region__footer {
+        display: block;
+    }
+
+    .region_center {
+        width: 100%;
+        display: flex;
+        margin: 60px 0;
+        gap: 6em;
+        justify-content: space-between;
+    }
+    .down_region__footer{
+        display: block;
+    }
+    .credit_card_grid{
+        margin-top: 30px;
+    }
 }
 </style>

@@ -75,6 +75,10 @@ export default {
   justify-content: space-around;
 }
 
+.justify-c-evenly {
+  justify-content: space-evenly;
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -95,5 +99,13 @@ export default {
 
 .highlight_red {
   color: #DB3E51;
+}
+
+@media only screen and (max-width: 1020px) {
+  .w-70 {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+  }
 }
 </style>

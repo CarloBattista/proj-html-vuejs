@@ -63,19 +63,19 @@ export default {
     outline: none;
 }
 
-.emailField::placeholder{
+.emailField::placeholder {
     color: #8C8C8C;
     font-size: 1rem;
     font-weight: 400;
 }
 
-.emailField[type=email]{
+.emailField[type=email] {
     color: #161C2D;
     font-size: 1rem;
     font-weight: 600;
 }
 
-.container_field .btn{
+.container_field .btn {
     position: absolute;
     top: 50%;
     right: 3px;
@@ -93,7 +93,19 @@ export default {
     transition: all 200ms ease;
 }
 
-.container_field .btn:hover{
+.container_field .btn:hover {
     background: #2443AC;
+}
+
+@media only screen and (max-width: 1020px) {
+    .findout_container {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+
+    .descriptionSection,
+    .container_field_email {
+        width: 100%;
+    }
 }
 </style>
